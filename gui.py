@@ -1,8 +1,5 @@
 import gradio as gr
+from qrMod import qr
 
-
-def greet(name):
-    return f'Hello {name}!'
-
-demo = gr.Interface(fn=greet, inputs='text', outputs='text')
-demo.launch()
+demo = gr.Interface(fn=qr, inputs='text', outputs=gr.Image())
+demo.launch(share=True)
