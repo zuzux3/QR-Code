@@ -11,5 +11,5 @@ def qr(string: str):
     
     return img
 
-test = qr('test')
-test.show()
+'''test = qr('test')
+test.show()'''
